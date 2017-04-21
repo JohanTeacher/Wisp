@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{52B85D36-3721-12E1-3AE7-BE4D00734B29}") = "Wisp", "Assembly-CSharp.csproj", "{EA2134F6-C203-ED16-4AA0-909FC9404EE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA2134F6-C203-ED16-4AA0-909FC9404EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2134F6-C203-ED16-4AA0-909FC9404EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2134F6-C203-ED16-4AA0-909FC9404EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2134F6-C203-ED16-4AA0-909FC9404EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

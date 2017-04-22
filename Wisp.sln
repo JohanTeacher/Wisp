@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{52B85D36-3721-12E1-3AE7-BE4D00734B29}") = "Wisp", "Assembly-CSharp.csproj", "{EA2134F6-C203-ED16-4AA0-909FC9404EE7}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wisp", "Assembly-CSharp.csproj", "{EA2134F6-C203-ED16-4AA0-909FC9404EE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

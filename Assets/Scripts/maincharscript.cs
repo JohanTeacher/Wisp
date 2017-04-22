@@ -18,6 +18,8 @@ public class maincharscript : MonoBehaviour {
 	private bool onUnstableSurface; //If standing on an unstable surface (like a ball). Should enable jumping.
 	private Vector2 startPosition; //Where does the mainchar start. Is set on start();
 
+    private int petalsCollected; //How many petals that has been collected in total. More petals = more power.
+
 	maincharscript()
 	{
 		runSpeed = 0.0f;
@@ -175,25 +177,37 @@ public class maincharscript : MonoBehaviour {
 		this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		//Check tigger collisions
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        //Check tigger collisions
 
-		if (other.gameObject.tag == "Climbable") {
+        if (other.gameObject.tag == "Climbable")
+        {
 
-			//Starting to climb.
+            //Starting to climb.
 
-			//Stop falling and jumping and what not
-			isFalling = false;
-			isJumping = false;
-			isClimbing = true;
-			GetComponent<Rigidbody2D> ().gravityScale = 0;
-			GetComponent<Rigidbody2D> ().velocity = new Vector2(0,0);
+            //Stop falling and jumping and what not
+            isFalling = false;
+            isJumping = false;
+            isClimbing = true;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 
-			print ("CLIMBING!!");
-		} 
+            print("CLIMBING!!");
+        }
+        else if (other.gameObject.tag == "Petal")
+        {
+            // YAY! You just picked up a petal!
 
-	}
+            //Destroy the petal graphics
+            Destroy(other.gameObject);
+
+            //Increase counter
+            petalsCollected++;
+
+            print("ONE MORE PETAL!! Now you have " + petalsCollected + " flower petals.");
+        }
+    }
 
 	void OnTriggerExit2D(Collider2D other)
 	{

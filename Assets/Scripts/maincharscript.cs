@@ -20,6 +20,8 @@ public class maincharscript : MonoBehaviour {
 
     private int petalsCollected; //How many petals that has been collected in total. More petals = more power.
 
+    private GameObject glowy; //The object that holds the glow effect sprite
+
 	maincharscript()
 	{
 		runSpeed = 0.0f;
@@ -40,7 +42,11 @@ public class maincharscript : MonoBehaviour {
 
 		//Set start position
 		startPosition = this.transform.position;
+        glowy = transform.FindChild("glowthing").gameObject;
 
+        glowy.transform.localScale = new Vector3(0.55f, 0.55f, 0.55f);
+        Color tempColor = glowy.GetComponent<SpriteRenderer>().color;
+        glowy.GetComponent<SpriteRenderer>().color = new Color(tempColor.r, tempColor.g, tempColor.b, 0.4f);
 	}
 	
 	// Update is called once per frame
@@ -204,6 +210,13 @@ public class maincharscript : MonoBehaviour {
 
             //Increase counter
             petalsCollected++;
+
+            //Increase size of the glowiness. The Power of you
+            glowy.transform.localScale += new Vector3(0.15f,0.15f,0.15f);
+
+            //Increase opasity of glowiness.
+            Color tempColor = glowy.GetComponent<SpriteRenderer>().color;
+            glowy.GetComponent<SpriteRenderer>().color = new Color(tempColor.r, tempColor.g, tempColor.b, tempColor.a + 0.2f); //by 0.2
 
             print("ONE MORE PETAL!! Now you have " + petalsCollected + " flower petals.");
         }

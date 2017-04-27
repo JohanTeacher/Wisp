@@ -15,12 +15,15 @@ public class maincharscript : MonoBehaviour {
 	private bool isFalling;
 	private bool isJumping;
 	private bool isClimbing;
+	private GameObject isHangingFromHandle; //Pointer to handle from witch mainchar is hanging, NULL value means NOT hanging
 	private bool onUnstableSurface; //If standing on an unstable surface (like a ball). Should enable jumping.
 	private Vector2 startPosition; //Where does the mainchar start. Is set on start();
 
     private int petalsCollected; //How many petals that has been collected in total. More petals = more power.
+	private GameObject pickUpObject; //Object that mainchar has picked up
 
     private GameObject glowy; //The object that holds the glow effect sprite
+
 
 	maincharscript()
 	{
@@ -35,6 +38,8 @@ public class maincharscript : MonoBehaviour {
 		isFalling = true;
 		isJumping = false;
 		isClimbing = false;
+		isHangingFromHandle = null;
+		pickUpObject = null;
 	}
 
 	// Use this for initialization
@@ -44,6 +49,7 @@ public class maincharscript : MonoBehaviour {
 		startPosition = this.transform.position;
         glowy = transform.FindChild("glowthing").gameObject;
 
+		//Set glowy start values
         glowy.transform.localScale = new Vector3(0.55f, 0.55f, 0.55f);
         Color tempColor = glowy.GetComponent<SpriteRenderer>().color;
         glowy.GetComponent<SpriteRenderer>().color = new Color(tempColor.r, tempColor.g, tempColor.b, 0.4f);
@@ -58,6 +64,17 @@ public class maincharscript : MonoBehaviour {
 		{
 			//Player wants to JUMP
 
+			//Free mainchar from potential attachment to handles
+			if(isHangingFromHandle)
+			{
+				//Get veclocity from the handle's velocity
+				GetComponent<Rigidbody2D> ().velocity = isHangingFromHandle.GetComponent<Rigidbody2D> ().velocity;
+
+				//Release
+				isHangingFromHandle = null;
+			}
+
+
 			//Are we firmly on ground?
 			if (jumpsMade < multiJumpNumber) {
 
@@ -65,6 +82,8 @@ public class maincharscript : MonoBehaviour {
 				isJumping = true;
 				jumpStartTime = Time.time;
 				jumpsMade++;
+				//GetComponent<Rigidbody2D> ().velocity = new Vector2(GetComponent<Rigidbody2D> ().velocity.x,0);
+				GetComponent<Rigidbody2D> ().AddForce (new Vector2(0,jumpForce*100));
 				print ("JUMP!");
 			}
 		}
@@ -122,6 +141,14 @@ public class maincharscript : MonoBehaviour {
 			//Reset to startposition
 			resetAll();
 		}
+
+		//Check if hanging from handle
+		if(isHangingFromHandle != null)
+		{
+			//Is hangging from a handle
+
+			this.transform.position = isHangingFromHandle.transform.position;
+		}
 	}
 
 	void JumpUpdate()
@@ -142,7 +169,7 @@ public class maincharscript : MonoBehaviour {
 			//Falling and in a jump
 
 			//Continue Jump movement
-			this.transform.Translate (new Vector2 (0, (jumpForce * (jumpsMade+1)) * Time.deltaTime));
+			//this.transform.Translate (new Vector2 (0, (jumpForce * (jumpsMade+1)) * Time.deltaTime));
 		
 		} else if (!isFalling && isJumping) {
 
@@ -181,45 +208,74 @@ public class maincharscript : MonoBehaviour {
 
 		//Reset velocity
 		this.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
+
+		//Reset glowy
+		glowy.transform.localScale = new Vector3(0.55f, 0.55f, 0.55f);
+		Color tempColor = glowy.GetComponent<SpriteRenderer>().color;
+		glowy.GetComponent<SpriteRenderer>().color = new Color(tempColor.r, tempColor.g, tempColor.b, 0.4f);
 	}
 
     void OnTriggerEnter2D(Collider2D other)
     {
         //Check tigger collisions
 
-        if (other.gameObject.tag == "Climbable")
-        {
+		if (other.gameObject.tag == "Climbable") {
 
-            //Starting to climb.
+			//Starting to climb.
 
-            //Stop falling and jumping and what not
-            isFalling = false;
-            isJumping = false;
-            isClimbing = true;
-            GetComponent<Rigidbody2D>().gravityScale = 0;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+			//Stop falling and jumping and what not
+			isFalling = false;
+			isJumping = false;
+			isClimbing = true;
+			GetComponent<Rigidbody2D> ().gravityScale = 0;
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
 
-            print("CLIMBING!!");
-        }
-        else if (other.gameObject.tag == "Petal")
-        {
-            // YAY! You just picked up a petal!
+			print ("CLIMBING!!");
+		} else if (other.gameObject.tag == "Petal") {
+			// YAY! You just picked up a petal!
 
-            //Destroy the petal graphics
-            Destroy(other.gameObject);
+			//Destroy the petal graphics
+			Destroy (other.gameObject);
 
-            //Increase counter
-            petalsCollected++;
+			//Increase counter
+			petalsCollected++;
 
-            //Increase size of the glowiness. The Power of you
-            glowy.transform.localScale += new Vector3(0.15f,0.15f,0.15f);
+			//Increase size of the glowiness. The Power of you
+			glowy.transform.localScale += new Vector3 (0.15f, 0.15f, 0.15f);
 
-            //Increase opasity of glowiness.
-            Color tempColor = glowy.GetComponent<SpriteRenderer>().color;
-            glowy.GetComponent<SpriteRenderer>().color = new Color(tempColor.r, tempColor.g, tempColor.b, tempColor.a + 0.2f); //by 0.2
+			//Increase opasity of glowiness.
+			Color tempColor = glowy.GetComponent<SpriteRenderer> ().color;
+			glowy.GetComponent<SpriteRenderer> ().color = new Color (tempColor.r, tempColor.g, tempColor.b, tempColor.a + 0.2f); //by 0.2
 
-            print("ONE MORE PETAL!! Now you have " + petalsCollected + " flower petals.");
-        }
+			print ("ONE MORE PETAL!! Now you have " + petalsCollected + " flower petals.");
+		} else if (other.gameObject.tag == "PendulumHandle") {
+			//Hanging from a pendulum
+
+			//set reference
+			isHangingFromHandle = other.gameObject;
+
+			print ("Hanging");
+		} else if (other.gameObject.tag == "UpwardsInforcer") {
+			//On a bouncer (like a trampoline) or a wind draft that will cast mainchar upwards
+			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 5000));
+			print ("UP UP UP!!");
+		} else if (other.gameObject.tag == "WayOut") {
+			//Enetering the way out to finish the level
+
+			if (other.GetComponent<WayOut> ().isOpen) {
+				print ("YAAAAY!! YOU'RE OUT! Congratulations, you made it.");
+			} else {
+				print ("Nope. You cant exit. There's something blocking it.");
+			}
+		} else if (other.gameObject.tag == "PickUp") {
+			//Picking up the pick up object when moving into it
+
+			pickUpObject = other.gameObject;
+			other.transform.SetParent (transform);
+			other.transform.localPosition = new Vector2 (1,0);
+
+			print ("Picking up " + other.gameObject.name);
+		}
     }
 
 	void OnTriggerExit2D(Collider2D other)
@@ -232,9 +288,18 @@ public class maincharscript : MonoBehaviour {
 	
 			//Back to falling and jumping and what not
 			isClimbing = false;
-			GetComponent<Rigidbody2D> ().gravityScale = 0.5f;
+			GetComponent<Rigidbody2D> ().gravityScale = 1.0f;
 
 			print ("not climbing");
+		}
+		else if (other.gameObject.tag == "PendulumHandle")
+		{
+			//Hanging from a pendulum
+
+			//set reference
+			isHangingFromHandle = null;
+
+			print ("Droped handle.");
 		}
 
 	}

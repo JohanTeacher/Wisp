@@ -59,6 +59,33 @@ public class maincharscript : MonoBehaviour {
 	void Update () 
 	{
 
+		//Actions
+		if (Input.GetKey (KeyCode.E) || Input.GetKey (KeyCode.Return)) {
+
+			//Drop any potential items beeing picked up .. and..
+			//Use your Flower Powers
+			if (pickUpObject) {
+
+				//Carrying around an object
+
+				//Drop it
+				pickUpObject.transform.localPosition = new Vector2(0,8);
+				this.transform.GetChild(1).SetParent(null);
+				if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow))
+					pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2(runSpeed*75, 200));
+				else if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow))
+					pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2(-(runSpeed*75), 200));
+				else
+					pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2(0, 200));
+				pickUpObject.GetComponent<Rigidbody2D> ().AddTorque (50.0f);
+				pickUpObject.GetComponent<PickUp> ().StateDropedDown ();
+				GetComponent<CapsuleCollider2D> ().enabled = true;
+				pickUpObject = null;
+
+			}
+		}
+
+
 		//Jumping
 		if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetKeyDown (KeyCode.RightShift) || Input.GetKeyDown (KeyCode.Space)) 
 		{
@@ -68,7 +95,7 @@ public class maincharscript : MonoBehaviour {
 			if(isHangingFromHandle)
 			{
 				//Get veclocity from the handle's velocity
-				GetComponent<Rigidbody2D> ().velocity = isHangingFromHandle.GetComponent<Rigidbody2D> ().velocity;
+				GetComponent<Rigidbody2D> ().velocity = isHangingFromHandle.GetComponent<Rigidbody2D> ().velocity*100;
 
 				//Release
 				isHangingFromHandle = null;
@@ -186,7 +213,6 @@ public class maincharscript : MonoBehaviour {
 			//Jump timer ends. Stop aplying force upwards.
 			isJumping = false;
 
-
 		}
 
 
@@ -257,7 +283,9 @@ public class maincharscript : MonoBehaviour {
 			print ("Hanging");
 		} else if (other.gameObject.tag == "UpwardsInforcer") {
 			//On a bouncer (like a trampoline) or a wind draft that will cast mainchar upwards
-			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 5000));
+
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (0.0f, 0.0f);
+			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 4500));
 			print ("UP UP UP!!");
 		} else if (other.gameObject.tag == "WayOut") {
 			//Enetering the way out to finish the level
@@ -267,15 +295,26 @@ public class maincharscript : MonoBehaviour {
 			} else {
 				print ("Nope. You cant exit. There's something blocking it.");
 			}
-		} else if (other.gameObject.tag == "PickUp") {
-			//Picking up the pick up object when moving into it
+		} else if (other.gameObject.name == "JackInTheBox") {
+			//Enetering space to enter windup key
 
-			pickUpObject = other.gameObject;
-			other.transform.SetParent (transform);
-			other.transform.localPosition = new Vector2 (1,0);
+			if (pickUpObject) {
+				//is carrying something
 
-			print ("Picking up " + other.gameObject.name);
+				if (pickUpObject.name == "WindUpKey") {
+					//is carrying the windup key!!! YAYA!
+
+					//Place key in the box
+					this.transform.GetChild(1).SetParent(other.gameObject.transform);
+					pickUpObject.GetComponent<PickUp> ().StatePlaced ();
+					pickUpObject.transform.localPosition = other.GetComponent<JackInTheBox> ().KeyLocalPosition;
+					pickUpObject.transform.Rotate(0,0, other.GetComponent<JackInTheBox> ().KeyLocalRotation);
+					pickUpObject = null;
+
+				}
+			}
 		}
+
     }
 
 	void OnTriggerExit2D(Collider2D other)
@@ -316,6 +355,15 @@ public class maincharscript : MonoBehaviour {
 			onUnstableSurface = true;
 
 			print ("ON BALL!!");
+		}
+		else if (coll.gameObject.tag == "PickUp") {
+			//Picking up the pick up object when moving into it
+
+			pickUpObject = coll.gameObject;
+			coll.transform.SetParent (transform);
+			coll.gameObject.GetComponent<PickUp> ().StatePickedUp();
+
+			print ("Picking up " + coll.gameObject.name);
 		}
 			
 

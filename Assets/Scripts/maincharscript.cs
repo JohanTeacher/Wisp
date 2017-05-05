@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class maincharscript : MonoBehaviour {
 
@@ -15,6 +16,7 @@ public class maincharscript : MonoBehaviour {
 	private bool isFalling;
 	private bool isJumping;
 	private bool isClimbing;
+	private GameObject isCloseToWayOut; //true if close by a way out. Using powers may open the way.
 	private GameObject isHangingFromHandle; //Pointer to handle from witch mainchar is hanging, NULL value means NOT hanging
 	private bool onUnstableSurface; //If standing on an unstable surface (like a ball). Should enable jumping.
 	private Vector2 startPosition; //Where does the mainchar start. Is set on start();
@@ -38,6 +40,7 @@ public class maincharscript : MonoBehaviour {
 		isFalling = true;
 		isJumping = false;
 		isClimbing = false;
+		isCloseToWayOut = null;
 		isHangingFromHandle = null;
 		pickUpObject = null;
 	}
@@ -64,6 +67,8 @@ public class maincharscript : MonoBehaviour {
 
 			//Drop any potential items beeing picked up .. and..
 			//Use your Flower Powers
+
+			//Catrying anything?
 			if (pickUpObject) {
 
 				//Carrying around an object
@@ -82,6 +87,18 @@ public class maincharscript : MonoBehaviour {
 				GetComponent<CapsuleCollider2D> ().enabled = true;
 				pickUpObject = null;
 
+			}
+
+			//Use your power
+			if (isCloseToWayOut) {
+				//Standing by a way out when using the power
+
+				//Do you have enough power?
+				if(petalsCollected >= isCloseToWayOut.GetComponent<WayOut>().HP)
+				{
+					print ("YOU HAVE THE POWA!! THE WAY OPENS!");
+					isCloseToWayOut.GetComponent<WayOut> ().isOpen = true;
+				}
 			}
 		}
 
@@ -273,6 +290,10 @@ public class maincharscript : MonoBehaviour {
 			Color tempColor = glowy.GetComponent<SpriteRenderer> ().color;
 			glowy.GetComponent<SpriteRenderer> ().color = new Color (tempColor.r, tempColor.g, tempColor.b, tempColor.a + 0.2f); //by 0.2
 
+			//Reset jumping
+			isFalling = false;
+			jumpsMade = 0;
+
 			print ("ONE MORE PETAL!! Now you have " + petalsCollected + " flower petals.");
 		} else if (other.gameObject.tag == "PendulumHandle") {
 			//Hanging from a pendulum
@@ -290,11 +311,18 @@ public class maincharscript : MonoBehaviour {
 		} else if (other.gameObject.tag == "WayOut") {
 			//Enetering the way out to finish the level
 
+			isCloseToWayOut = other.gameObject;
+
 			if (other.GetComponent<WayOut> ().isOpen) {
 				print ("YAAAAY!! YOU'RE OUT! Congratulations, you made it.");
+				SceneManager.LoadScene ("Level2");
 			} else {
 				print ("Nope. You cant exit. There's something blocking it.");
 			}
+
+
+
+
 		} else if (other.gameObject.name == "JackInTheBox") {
 			//Enetering space to enter windup key
 
@@ -311,6 +339,9 @@ public class maincharscript : MonoBehaviour {
 					pickUpObject.transform.Rotate(0,0, other.GetComponent<JackInTheBox> ().KeyLocalRotation);
 					pickUpObject = null;
 
+					//Set the timer
+					other.GetComponent<JackInTheBox> ().Unlock();
+
 				}
 			}
 		}
@@ -323,22 +354,24 @@ public class maincharscript : MonoBehaviour {
 
 		if (other.gameObject.tag == "Climbable") {
 
-			//Starting to climb.
+			//No longer to climbing.
 	
 			//Back to falling and jumping and what not
 			isClimbing = false;
 			GetComponent<Rigidbody2D> ().gravityScale = 1.0f;
 
 			print ("not climbing");
-		}
-		else if (other.gameObject.tag == "PendulumHandle")
-		{
-			//Hanging from a pendulum
+		} else if (other.gameObject.tag == "PendulumHandle") {
+			//No longer hanging from a pendulum
 
 			//set reference
 			isHangingFromHandle = null;
 
 			print ("Droped handle.");
+		} else if (other.gameObject.tag == "WayOut") {
+			//No longer close to the way out
+
+			isCloseToWayOut = null;
 		}
 
 	}

@@ -1,0 +1,748 @@
+fileFormatVersion: 2
+guid: 938944dae064440e8a134faef0d0ac17
+timeCreated: 1493987537
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MainChar01_WalkSheetFINAL01_2_0
+    21300002: MainChar01_WalkSheetFINAL01_2_1
+    21300004: MainChar01_WalkSheetFINAL01_2_2
+    21300006: MainChar01_WalkSheetFINAL01_2_3
+    21300008: MainChar01_WalkSheetFINAL01_2_4
+    21300010: MainChar01_WalkSheetFINAL01_2_5
+    21300012: MainChar01_WalkSheetFINAL01_2_6
+    21300014: MainChar01_WalkSheetFINAL01_2_7
+    21300016: MainChar01_WalkSheetFINAL01_2_8
+    21300018: MainChar01_WalkSheetFINAL01_2_9
+    21300020: MainChar01_WalkSheetFINAL01_2_10
+    21300022: MainChar01_WalkSheetFINAL01_2_11
+    21300024: MainChar01_WalkSheetFINAL01_2_12
+    21300026: MainChar01_WalkSheetFINAL01_2_13
+    21300028: MainChar01_WalkSheetFINAL01_2_14
+    21300030: MainChar01_WalkSheetFINAL01_2_15
+    21300032: MainChar01_WalkSheetFINAL01_2_16
+    21300034: MainChar01_WalkSheetFINAL01_2_17
+    21300036: MainChar01_WalkSheetFINAL01_2_18
+    21300038: MainChar01_WalkSheetFINAL01_2_19
+    21300040: MainChar01_WalkSheetFINAL01_2_20
+    21300042: MainChar01_WalkSheetFINAL01_2_21
+    21300044: MainChar01_WalkSheetFINAL01_2_22
+    21300046: MainChar01_WalkSheetFINAL01_2_23
+    21300048: MainChar01_WalkSheetFINAL01_2_24
+    21300050: MainChar01_WalkSheetFINAL01_2_25
+    21300052: MainChar01_WalkSheetFINAL01_2_26
+    21300054: MainChar01_WalkSheetFINAL01_2_27
+    21300056: MainChar01_WalkSheetFINAL01_2_28
+    21300058: MainChar01_WalkSheetFINAL01_2_29
+    21300060: MainChar01_WalkSheetFINAL01_2_30
+    21300062: MainChar01_WalkSheetFINAL01_2_31
+    21300064: MainChar01_WalkSheetFINAL01_2_32
+    21300066: MainChar01_WalkSheetFINAL01_2_33
+    21300068: MainChar01_WalkSheetFINAL01_2_34
+    21300070: MainChar01_WalkSheetFINAL01_2_35
+    21300072: MainChar01_WalkSheetFINAL01_2_36
+    21300074: MainChar01_WalkSheetFINAL01_2_37
+    21300076: MainChar01_WalkSheetFINAL01_2_38
+    21300078: MainChar01_WalkSheetFINAL01_2_39
+    21300080: MainChar01_WalkSheetFINAL01_2_40
+    21300082: MainChar01_WalkSheetFINAL01_2_41
+    21300084: MainChar01_WalkSheetFINAL01_2_42
+    21300086: MainChar01_WalkSheetFINAL01_2_43
+    21300088: MainChar01_WalkSheetFINAL01_2_44
+    21300090: MainChar01_WalkSheetFINAL01_2_45
+    21300092: MainChar01_WalkSheetFINAL01_2_46
+    21300094: MainChar01_WalkSheetFINAL01_2_47
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2504
+        width: 340
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 2504
+        width: 341
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 2504
+        width: 333
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_3
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 2506
+        width: 320
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_4
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 2507
+        width: 310
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_5
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 2507
+        width: 296
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_6
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 2509
+        width: 293
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_7
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 2511
+        width: 294
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2025
+        width: 293
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_9
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 2027
+        width: 292
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_10
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2029
+        width: 293
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_11
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 2030
+        width: 292
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_12
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 2034
+        width: 294
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_13
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 2036
+        width: 293
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_14
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 2038
+        width: 293
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_15
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 2040
+        width: 292
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_16
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1553
+        width: 293
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_17
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1555
+        width: 299
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_18
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 1557
+        width: 314
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_19
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1559
+        width: 335
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_20
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 1561
+        width: 348
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_21
+      rect:
+        serializedVersion: 2
+        x: 2478
+        y: 1563
+        width: 358
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_22
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 1563
+        width: 367
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_23
+      rect:
+        serializedVersion: 2
+        x: 3447
+        y: 1563
+        width: 371
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_24
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1076
+        width: 371
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1076
+        width: 367
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_26
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1074
+        width: 363
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_27
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 1074
+        width: 352
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_28
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 1072
+        width: 339
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_29
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 1071
+        width: 318
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_30
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 1069
+        width: 299
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_31
+      rect:
+        serializedVersion: 2
+        x: 3493
+        y: 1067
+        width: 293
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_32
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 578
+        width: 293
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_33
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 575
+        width: 293
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_34
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 573
+        width: 295
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_35
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 571
+        width: 296
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_36
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 567
+        width: 295
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_37
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 565
+        width: 295
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_38
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 563
+        width: 297
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_39
+      rect:
+        serializedVersion: 2
+        x: 3502
+        y: 561
+        width: 296
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_40
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 71
+        width: 297
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_41
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 69
+        width: 298
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_42
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 67
+        width: 297
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_43
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 65
+        width: 307
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_44
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 65
+        width: 324
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_45
+      rect:
+        serializedVersion: 2
+        x: 2501
+        y: 63
+        width: 335
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_46
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 63
+        width: 341
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar01_WalkSheetFINAL01_2_47
+      rect:
+        serializedVersion: 2
+        x: 3474
+        y: 63
+        width: 340
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

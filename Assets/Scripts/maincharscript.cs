@@ -98,6 +98,9 @@ public class maincharscript : MonoBehaviour {
 				{
 					print ("YOU HAVE THE POWA!! THE WAY OPENS!");
 					isCloseToWayOut.GetComponent<WayOut> ().isOpen = true;
+
+                    //Try to walk through the WayOut
+                    TryToWalkThroughWayOut(isCloseToWayOut);
 				}
 			}
 		}
@@ -136,22 +139,33 @@ public class maincharscript : MonoBehaviour {
 
 		//Side movement
 		if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow)) 
-		{
-			//Player wants to move RIGHT
+		{            
+            //Player wants to move RIGHT
 			this.transform.Translate (new Vector2 (runSpeed * Time.deltaTime, 0));
 
 			//Flip sprite
 			this.GetComponent<SpriteRenderer>().flipX = false;
 
-		}
-		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) 
+            //Change to running animation
+            GetComponent<Animator>().SetBool("Walking", true);
+
+        }
+		else if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) 
 		{
 			//Player wants to move LEFT
 			this.transform.Translate (new Vector2 (-runSpeed * Time.deltaTime, 0));
 
 			//Flip sprite
 			this.GetComponent<SpriteRenderer>().flipX = true;
-		}
+
+            //Change to running animation
+            GetComponent<Animator>().SetBool("Walking", true);
+        }
+        else
+        {
+            //Reset Animation
+            GetComponent<Animator>().SetBool("Walking", false);
+        }
 
 		//Up/down movement
 		if (isClimbing) {
@@ -296,10 +310,13 @@ public class maincharscript : MonoBehaviour {
 
 			print ("ONE MORE PETAL!! Now you have " + petalsCollected + " flower petals.");
 		} else if (other.gameObject.tag == "PendulumHandle") {
-			//Hanging from a pendulum
+            //Hanging from a pendulum
+            isFalling = false;
+            isJumping = false;
+            jumpsMade = 0;
 
-			//set reference
-			isHangingFromHandle = other.gameObject;
+            //set reference
+            isHangingFromHandle = other.gameObject;
 
 			print ("Hanging");
 		} else if (other.gameObject.tag == "UpwardsInforcer") {
@@ -311,19 +328,14 @@ public class maincharscript : MonoBehaviour {
 		} else if (other.gameObject.tag == "WayOut") {
 			//Enetering the way out to finish the level
 
+            //Mark what way out mainchar is close to
 			isCloseToWayOut = other.gameObject;
 
-			if (other.GetComponent<WayOut> ().isOpen) {
-				print ("YAAAAY!! YOU'RE OUT! Congratulations, you made it.");
-				SceneManager.LoadScene ("Level2");
-			} else {
-				print ("Nope. You cant exit. There's something blocking it.");
-			}
+            //Try to walk through
+            TryToWalkThroughWayOut(isCloseToWayOut);
+           
 
-
-
-
-		} else if (other.gameObject.name == "JackInTheBox") {
+        } else if (other.gameObject.name == "JackInTheBox") {
 			//Enetering space to enter windup key
 
 			if (pickUpObject) {
@@ -346,6 +358,19 @@ public class maincharscript : MonoBehaviour {
 			}
 		}
 
+    }
+
+    void TryToWalkThroughWayOut(GameObject other)
+    { 
+       //Try to walk through the WayOut
+        if (other.GetComponent<WayOut>().isOpen)
+        {
+            print("YAAAAY!! YOU'RE OUT! Congratulations, you made it.");
+            SceneManager.LoadScene("Level2");
+        }
+        else {
+            print("Nope. You cant exit. There's something blocking it.");
+        }
     }
 
 	void OnTriggerExit2D(Collider2D other)

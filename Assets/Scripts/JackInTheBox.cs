@@ -34,7 +34,7 @@ public class JackInTheBox : MonoBehaviour {
 			// It's time to open up the lid and shot up any objects ontop of it
 
 			//Find items that recides ontop of the box
-			int number = GetComponent<CapsuleCollider2D>().OverlapCollider(filter,overlapingColliders);
+			int number = GetComponentInChildren<BoxCollider2D>().OverlapCollider(filter,overlapingColliders);
 
 			print("Boost " + number + " Colliders precent:");
 

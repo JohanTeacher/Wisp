@@ -73,19 +73,26 @@ public class maincharscript : MonoBehaviour {
 
 				//Carrying around an object
 
-				//Drop it
-				pickUpObject.transform.localPosition = new Vector2(0,8);
-				this.transform.GetChild(1).SetParent(null);
-				if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow))
-					pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2(runSpeed*75, 200));
-				else if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow))
-					pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2(-(runSpeed*75), 200));
-				else
-					pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2(0, 200));
-				pickUpObject.GetComponent<Rigidbody2D> ().AddTorque (50.0f);
-				pickUpObject.GetComponent<PickUp> ().StateDropedDown ();
-				GetComponent<CapsuleCollider2D> ().enabled = true;
-				pickUpObject = null;
+
+				if (pickUpObject.GetComponent<Collider2D>().OverlapCollider(new ContactFilter2D(), new Collider2D[3]) <= 1){
+					//Drop it
+					pickUpObject.transform.localPosition = new Vector2 (0, 8);
+					this.transform.GetChild (1).SetParent (null);
+					if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow))
+						pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (runSpeed * 75, 200));
+					else if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow))
+						pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (-(runSpeed * 75), 200));
+					else
+						pickUpObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 200));
+					pickUpObject.GetComponent<Rigidbody2D> ().AddTorque (50.0f);
+					pickUpObject.GetComponent<PickUp> ().StateDropedDown ();
+					GetComponent<CapsuleCollider2D> ().enabled = true;
+					pickUpObject = null;
+				
+				} else {
+					print (pickUpObject.name + " is touching something.");
+				}
+
 
 			}
 
@@ -420,6 +427,7 @@ public class maincharscript : MonoBehaviour {
 			pickUpObject = coll.gameObject;
 			coll.transform.SetParent (transform);
 			coll.gameObject.GetComponent<PickUp> ().StatePickedUp();
+
 
 			print ("Picking up " + coll.gameObject.name);
 		}

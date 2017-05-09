@@ -38,9 +38,11 @@ public class PickUp : MonoBehaviour {
 		//transform.localRotation.ToAngleAxis(PickedUpLocalRotation,Vector3.forward);
 		transform.rotation = new Quaternion(0,0,0,0);
 		transform.Rotate (new Vector3 (0,0,PickedUpLocalRotation));
-		GetComponent<CapsuleCollider2D> ().enabled = false;
-		GetComponent<Rigidbody2D> ().gravityScale = 0;
-		GetComponent<Rigidbody2D> ().Sleep ();
+		//GetComponent<CapsuleCollider2D> ().enabled = false;
+		GetComponent<CapsuleCollider2D>().isTrigger = true;
+		//GetComponent<Rigidbody2D> ().gravityScale = 0;
+		//GetComponent<Rigidbody2D> ().Sleep ();
+		GetComponent<Rigidbody2D> ().simulated = false;
 	}
 
 	public void StateDropedDown()
@@ -50,8 +52,9 @@ public class PickUp : MonoBehaviour {
 		//transform.localRotation.ToAngleAxis(LyingAroundLocalRotation,Vector3.forward);
 		//transform.rotation.Set(0,0,0,0);
 		//transform.Rotate (new Vector3 (0,0,LyingAroundLocalRotation));
-		GetComponent<CapsuleCollider2D> ().enabled = true;
-		GetComponent<Rigidbody2D> ().gravityScale = 1;
+		//GetComponent<CapsuleCollider2D> ().enabled = true;
+		GetComponent<CapsuleCollider2D>().isTrigger = false;
+		GetComponent<Rigidbody2D> ().simulated = true;//gravityScale = 1;
 	}
 
 	public void StatePlaced ()
@@ -61,6 +64,7 @@ public class PickUp : MonoBehaviour {
 
 		transform.rotation = new Quaternion(0,0,0,0);
 		GetComponent<CapsuleCollider2D> ().enabled = false;
+		//GetComponent<CapsuleCollider2D>().isTrigger = true;
 		GetComponent<Rigidbody2D> ().gravityScale = 0;
 		GetComponent<Rigidbody2D> ().Sleep ();
 	}

@@ -1,0 +1,14 @@
+Buglista
+---------------
+Kameran är fel
+Pendeln ändrar riktning
+Om man hänger i pendeln för länge bygger gravitationen upp tills man flyger av.
+Idel-Animationen blir spegelvänd när man kommer från att ha gått åt vänster.
+
+
+
+
+Kart!
+----------
+Nyckeln kan åka igenom väggar ibland när man slänger iväg den
+	- Lösning?: Om den överlappar något ska man inte kunna kasta. Japp

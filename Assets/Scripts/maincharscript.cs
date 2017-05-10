@@ -325,6 +325,8 @@ public class maincharscript : MonoBehaviour {
             //set reference
             isHangingFromHandle = other.gameObject;
 
+			GetComponent<Rigidbody2D> ().gravityScale = 0.0f;
+
 			print ("Hanging");
 		} else if (other.gameObject.tag == "UpwardsInforcer") {
 			//On a bouncer (like a trampoline) or a wind draft that will cast mainchar upwards
@@ -398,6 +400,8 @@ public class maincharscript : MonoBehaviour {
 
 			//set reference
 			isHangingFromHandle = null;
+
+			GetComponent<Rigidbody2D> ().gravityScale = 1.0f;
 
 			print ("Droped handle.");
 		} else if (other.gameObject.tag == "WayOut") {

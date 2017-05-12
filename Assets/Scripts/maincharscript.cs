@@ -172,6 +172,9 @@ public class maincharscript : MonoBehaviour {
         {
             //Reset Animation
             GetComponent<Animator>().SetBool("Walking", false);
+
+			//Unflip
+			this.GetComponent<SpriteRenderer>().flipX = false;
         }
 
 		//Up/down movement
@@ -306,6 +309,9 @@ public class maincharscript : MonoBehaviour {
 
 			//Increase size of the glowiness. The Power of you
 			glowy.transform.localScale += new Vector3 (0.15f, 0.15f, 0.15f);
+
+			//Change color of the glowthing
+			glowy.GetComponent<SpriteRenderer>().color = other.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
 
 			//Increase opasity of glowiness.
 			Color tempColor = glowy.GetComponent<SpriteRenderer> ().color;

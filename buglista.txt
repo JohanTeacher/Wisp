@@ -2,8 +2,6 @@ Buglista
 ---------------
 Kameran är fel
 Pendeln ändrar riktning
-Idel-Animationen blir spegelvänd när man kommer från att ha gått åt vänster.
-
 
 
 
@@ -13,3 +11,5 @@ Nyckeln kan åka igenom väggar ibland när man slänger iväg den
 	- Lösning?: Om den överlappar något ska man inte kunna kasta. Japp
 
 Om man hänger i pendeln för länge bygger gravitationen upp tills man flyger av.
+
+Idle-Animationen blir spegelvänd när man kommer från att ha gått åt vänster.

@@ -5,12 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class maincharscript : MonoBehaviour {
 
+	//Public variables
 	public float runSpeed;	//How fast are character running
 	public float jumpForce;	//How fast is it jumping
 	public float jumpDurationTime;	//How many seconds is the force being aplied
 	public float jumpCooldown; 	 //How long until next jump is possible
 	public float deathPositionY; //At what hight position do you die from falling
 	public int multiJumpNumber;  //How many jumps can be made sequence
+
+	public Canvas UICanvas; //Reference to the UI
+
+
+	//Private variables
 	private int jumpsMade;	//Itereator. How many jumps ha pre
 	private float jumpStartTime; //When the jump was called
 	private bool isFalling;
@@ -25,6 +31,7 @@ public class maincharscript : MonoBehaviour {
 	private GameObject pickUpObject; //Object that mainchar has picked up
 
     private GameObject glowy; //The object that holds the glow effect sprite
+
 
 
 	maincharscript()
@@ -56,6 +63,12 @@ public class maincharscript : MonoBehaviour {
         glowy.transform.localScale = new Vector3(0.55f, 0.55f, 0.55f);
         Color tempColor = glowy.GetComponent<SpriteRenderer>().color;
         glowy.GetComponent<SpriteRenderer>().color = new Color(tempColor.r, tempColor.g, tempColor.b, 0.4f);
+	
+		//Hide petals in UI
+		for (int i = 2; i < 5; i++) {
+			UICanvas.transform.GetChild (i).GetComponent<CanvasRenderer> ().SetAlpha (0);
+		}
+	
 	}
 	
 	// Update is called once per frame
@@ -320,6 +333,9 @@ public class maincharscript : MonoBehaviour {
 			//Reset jumping
 			isFalling = false;
 			jumpsMade = 0;
+
+			//Add flower to the UI
+			UICanvas.transform.FindChild (other.gameObject.name).GetComponent<CanvasRenderer> ().SetAlpha (1);
 
 			print ("ONE MORE PETAL!! Now you have " + petalsCollected + " flower petals.");
 		} else if (other.gameObject.tag == "PendulumHandle") {

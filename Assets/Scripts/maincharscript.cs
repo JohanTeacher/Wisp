@@ -68,6 +68,9 @@ public class maincharscript : MonoBehaviour {
 		for (int i = 2; i < 5; i++) {
 			UICanvas.transform.GetChild (i).GetComponent<CanvasRenderer> ().SetAlpha (0);
 		}
+		//Hide glowy in UI
+		UICanvas.transform.GetChild (0).GetComponent<CanvasRenderer> ().SetAlpha (0.40f);
+		UICanvas.transform.GetChild (0).transform.localScale = new Vector2(0.4f,0.4f);
 	
 	}
 	
@@ -336,6 +339,13 @@ public class maincharscript : MonoBehaviour {
 
 			//Add flower to the UI
 			UICanvas.transform.FindChild (other.gameObject.name).GetComponent<CanvasRenderer> ().SetAlpha (1);
+
+			//Increase glowy intensity and change color
+			//float newGlowyAlpha = UICanvas.transform.GetChild (0).GetComponent<CanvasRenderer> ().GetAlpha () + 0.2f;
+			//UICanvas.transform.GetChild (0).GetComponent<CanvasRenderer> ().SetAlpha (newGlowyAlpha);
+			Vector2 glowyScale = UICanvas.transform.GetChild (0).transform.localScale;
+			UICanvas.transform.GetChild (0).transform.localScale = new Vector2(glowyScale.x + 0.2f, glowyScale.y + 0.2f);
+			UICanvas.transform.GetChild (0).GetComponent<CanvasRenderer>().SetColor(other.transform.GetChild(0).GetComponent<SpriteRenderer>().color);
 
 			print ("ONE MORE PETAL!! Now you have " + petalsCollected + " flower petals.");
 		} else if (other.gameObject.tag == "PendulumHandle") {

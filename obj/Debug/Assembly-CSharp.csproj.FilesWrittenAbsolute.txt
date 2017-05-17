@@ -19,3 +19,25 @@
 /Users/johanliewendahl/Dropbox/DATA/Projekt/Programmering/Unity Mac/Wisp/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/johanliewendahl/Dropbox/DATA/Projekt/Programmering/Unity Mac/Wisp/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/johanliewendahl/Dropbox/DATA/Projekt/Programmering/Unity Mac/Wisp/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/johanliewendahl/UnityProjects/Wisp/obj/Debug/Assembly-CSharp.dll
+/Users/johanliewendahl/UnityProjects/Wisp/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/UnityEngine.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/UnityEditor.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/nunit.framework.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/UnityEngine.VR.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Mono.Cecil.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Unity.DataContract.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/johanliewendahl/UnityProjects/Wisp/Temp/bin/Debug/Mono.Cecil.Mdb.dll

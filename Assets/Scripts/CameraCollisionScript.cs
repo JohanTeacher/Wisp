@@ -20,7 +20,6 @@ public class CameraCollisionScript : MonoBehaviour {
 		//Get bouds to check collisions 
 		Bounds thisBounds = this.GetComponent<Collider2D> ().bounds;
 		Bounds mainCharBounds = maincharacter.GetComponent<Collider2D> ().bounds;
-		/*
 		Bounds levelLimitsBounds = levelLimits.GetComponent<BoxCollider2D>().bounds;
 		Bounds cameraBounds;
 
@@ -34,7 +33,7 @@ public class CameraCollisionScript : MonoBehaviour {
 		float screenHeightInWorld = Vector3.Distance (topLeftOfScreenInWorld, bottomOfScreenInWorld);
 		Vector3 cameraSize = new Vector3 (screenWidthInWorld,screenHeightInWorld,0);
 		cameraBounds = new Bounds(cameraCenter,cameraSize);
-		*/
+
 
 
 		//Calculate camera trigger box position
@@ -74,31 +73,42 @@ public class CameraCollisionScript : MonoBehaviour {
 		cameraX = transform.position.x; 
 		cameraY = transform.position.y; 
 		cameraZ = mainCamera.transform.position.z;
-		mainCamera.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
+		//mainCamera.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
 
 
-		/*	
-		//Then, if the camera bounds hits the walls of the level bounds...
-		//... Place the camera back on the border
+
+		//Then, if the camera bounds is beyond walls of the level bounds...
 
 		if (LeftBoundsCollision (cameraBounds, levelLimitsBounds)) {
-			cameraX = topLeftOfScreenInWorld.x + (screenWidthInWorld / 2);
-			print ("LEFT");
+
+			//And if the character is still to the left och camera center
+			if (this.transform.position.x < cameraCenter.x) {
+
+				//... Place the camera back on the border
+				cameraX = topLeftOfScreenInWorld.x + (screenWidthInWorld / 2);
+			}
+
+			// Same goes for the other directions below...
+		
 		} else if (RightBoundsCollision (cameraBounds, levelLimitsBounds)) {
-			cameraX = rightOfScreenInWorld.x - (screenWidthInWorld / 2);
-			print ("RIGHT");
+			if (this.transform.position.x > cameraCenter.x) {
+				cameraX = rightOfScreenInWorld.x - (screenWidthInWorld / 2);
+			}
 		}
 
 		if (DownBoundsCollision (cameraBounds, levelLimitsBounds)) {
-			cameraY = topLeftOfScreenInWorld.y + (screenHeightInWorld / 2);
-			print ("BOTTOM");
+			if (this.transform.position.y < cameraCenter.y) {
+				cameraY = topLeftOfScreenInWorld.y + (screenHeightInWorld / 2);
+			}
 		} else if (UpBoundsCollision (cameraBounds, levelLimitsBounds)) {
-			cameraY = bottomOfScreenInWorld.y - (screenHeightInWorld / 2);
-			print ("TOP");
+			if (this.transform.position.y > cameraCenter.y) {
+				cameraY = bottomOfScreenInWorld.y - (screenHeightInWorld / 2);
+			}
 		}
 
+		//Finally: Do the actual placing of the camera.
 		mainCamera.transform.position = new Vector3 (cameraX, cameraY, cameraZ);
-		*/
+
 			
 	}
 

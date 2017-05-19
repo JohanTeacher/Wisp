@@ -430,7 +430,7 @@ public class maincharscript : MonoBehaviour {
 					//is carrying the windup key!!! YAYA!
 
 					//Place key in the box
-					this.transform.GetChild(1).SetParent(other.gameObject.transform);
+					this.transform.FindChild("WindUpKey").SetParent(other.gameObject.transform);
 					pickUpObject.GetComponent<PickUp> ().StatePlaced ();
 					pickUpObject.transform.localPosition = other.GetComponent<JackInTheBox> ().KeyLocalPosition;
 					pickUpObject.transform.Rotate(0,0, other.GetComponent<JackInTheBox> ().KeyLocalRotation);

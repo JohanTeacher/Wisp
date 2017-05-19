@@ -12,6 +12,7 @@ public class maincharscript : MonoBehaviour {
 	public float jumpCooldown; 	 //How long until next jump is possible
 	public float deathPositionY; //At what hight position do you die from falling
 	public int multiJumpNumber;  //How many jumps can be made sequence
+	public float powerDurationTime; //How many seconds is the power going to be showed?
 
 	public Canvas UICanvas; //Reference to the UI
 
@@ -19,9 +20,11 @@ public class maincharscript : MonoBehaviour {
 	//Private variables
 	private int jumpsMade;	//Itereator. How many jumps ha pre
 	private float jumpStartTime; //When the jump was called
+	private float powerStartTime; //When the power was called
 	private bool isFalling;
 	private bool isJumping;
 	private bool isClimbing;
+	private bool isUsingPower;
 	private GameObject isCloseToWayOut; //true if close by a way out. Using powers may open the way.
 	private GameObject isHangingFromHandle; //Pointer to handle from witch mainchar is hanging, NULL value means NOT hanging
 	private bool onUnstableSurface; //If standing on an unstable surface (like a ball). Should enable jumping.
@@ -44,9 +47,11 @@ public class maincharscript : MonoBehaviour {
 		deathPositionY = -1000.0f;
 		jumpsMade = 0;
 		multiJumpNumber = 2;
+		powerDurationTime = 1.0f;
 		isFalling = true;
 		isJumping = false;
 		isClimbing = false;
+		isUsingPower = false;
 		isCloseToWayOut = null;
 		isHangingFromHandle = null;
 		pickUpObject = null;
@@ -71,6 +76,9 @@ public class maincharscript : MonoBehaviour {
 		//Hide glowy in UI
 		UICanvas.transform.GetChild (0).GetComponent<CanvasRenderer> ().SetAlpha (0.40f);
 		UICanvas.transform.GetChild (0).transform.localScale = new Vector2(0.4f,0.4f);
+
+		//Hide power animation
+		this.transform.FindChild ("magic").GetComponent<SpriteRenderer> ().enabled = false;
 	
 	}
 	
@@ -91,7 +99,9 @@ public class maincharscript : MonoBehaviour {
 
 
 				if (pickUpObject.GetComponent<Collider2D>().OverlapCollider(new ContactFilter2D(), new Collider2D[3]) <= 1){
+
 					//Drop it
+
 					pickUpObject.transform.localPosition = new Vector2 (0, 8);
 					this.transform.GetChild (1).SetParent (null);
 					if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow))
@@ -109,10 +119,13 @@ public class maincharscript : MonoBehaviour {
 					print (pickUpObject.name + " is touching something.");
 				}
 
-
 			}
 
 			//Use your power
+			StartPowerAnimation();
+
+
+			//Is the power affecting any doorways?
 			if (isCloseToWayOut) {
 				//Standing by a way out when using the power
 
@@ -216,6 +229,9 @@ public class maincharscript : MonoBehaviour {
 		//Update jump
 		JumpUpdate();
 
+		//Update Power-animation
+		PowerUpdate();
+
 		//Check if we've fallen too far
 		if (this.transform.position.y <= deathPositionY) {
 
@@ -277,6 +293,34 @@ public class maincharscript : MonoBehaviour {
 		// Not Faling Not jumping (e.g. walking): Do nothing about jump 
 	}
 
+	void PowerUpdate()
+	{
+		//If powersequence is activated
+		if(isUsingPower)
+		{
+			//if timer is < powertime
+			if (Time.time - powerStartTime < powerDurationTime) {
+				//Play animation
+				this.transform.FindChild ("magic").GetComponent<SpriteRenderer> ().enabled = true;
+			}
+			else
+			{
+				//dectivate power
+				isUsingPower = false;
+
+				this.transform.FindChild ("magic").GetComponent<SpriteRenderer> ().enabled = false;
+			}
+		}
+	}
+
+	void StartPowerAnimation()
+	{
+		//Reset timer
+		powerStartTime = Time.time;
+
+		//Set isUsingPower
+		isUsingPower = true;
+	}
 
 	void resetAll()
 	{

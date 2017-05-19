@@ -5,6 +5,8 @@ Allmän stil:
 Lugnt med klassiska instrument. Mysig, magisk, spännande, avslappnad känsla med en gnutta hopp. :P
 För inspiration: Zelda-spelen. 
 
+Game-play
+------------
 Ambient background - Ljud på en vindsvåning - ska gå att loopa. Så kort som möjligt utan att man blir galen.
 Kort musikstycke - ca 1 min  - som ska spelas i början på en bana 
 Hoppljud - som en svag luftpust
@@ -18,3 +20,14 @@ Locket på en låda slår upp
 Locket på lådan stängs igen
 Pollenmagi - Irrblosset använder sin magiska naturkraft och lyckas öppna utgången
 Misslyckad pollen magi - Irrblosset har inte tillräckligt stark kraft ännu för att orka bryta förbannelsen på utgången.
+
+
+Start-screen
+-------------
+Musik
+knappljud
+
+
+Credits
+---------
+Musik

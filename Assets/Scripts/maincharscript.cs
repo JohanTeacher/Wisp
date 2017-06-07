@@ -168,6 +168,9 @@ public class maincharscript : MonoBehaviour {
 				//GetComponent<Rigidbody2D> ().velocity = new Vector2(GetComponent<Rigidbody2D> ().velocity.x,0);
 				GetComponent<Rigidbody2D> ().AddForce (new Vector2(0,jumpForce*100));
 				print ("JUMP!");
+
+				//Change animation
+				GetComponent<Animator>().SetTrigger("Jump");
 			}
 		}
 
@@ -262,6 +265,7 @@ public class maincharscript : MonoBehaviour {
 		} else {
 			isFalling = true;
 		}
+			
 
 		//Do the jump sequence
 		if (isJumping) {
@@ -288,6 +292,8 @@ public class maincharscript : MonoBehaviour {
 
 		}
 
+		//Update animation
+		GetComponent<Animator>().SetBool("Falling", isFalling);
 
 		// Falling but not jumping (e.g. falling off a cliff) : Do nothing about jump
 		// Not Faling Not jumping (e.g. walking): Do nothing about jump 
@@ -451,7 +457,7 @@ public class maincharscript : MonoBehaviour {
         if (other.GetComponent<WayOut>().isOpen)
         {
             print("YAAAAY!! YOU'RE OUT! Congratulations, you made it.");
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("Credits");
         }
         else {
             print("Nope. You cant exit. There's something blocking it.");

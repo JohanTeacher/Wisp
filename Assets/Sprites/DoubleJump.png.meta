@@ -1,0 +1,426 @@
+fileFormatVersion: 2
+guid: 985671bc692ae4ce9a84b54065f690fa
+timeCreated: 1496664918
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DoubleJump_0
+    21300002: DoubleJump_1
+    21300004: DoubleJump_2
+    21300006: DoubleJump_3
+    21300008: DoubleJump_4
+    21300010: DoubleJump_5
+    21300012: DoubleJump_6
+    21300014: DoubleJump_7
+    21300016: DoubleJump_8
+    21300018: DoubleJump_9
+    21300020: DoubleJump_10
+    21300022: DoubleJump_11
+    21300024: DoubleJump_12
+    21300026: DoubleJump_13
+    21300028: DoubleJump_14
+    21300030: DoubleJump_15
+    21300032: DoubleJump_16
+    21300034: DoubleJump_17
+    21300036: DoubleJump_18
+    21300038: DoubleJump_19
+    21300040: DoubleJump_20
+    21300042: DoubleJump_21
+    21300044: DoubleJump_22
+    21300046: DoubleJump_23
+    21300048: DoubleJump_24
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoubleJump_0
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 1525
+        width: 279
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_1
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 1525
+        width: 284
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_2
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 1526
+        width: 516
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1021
+        width: 333
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_4
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1007
+        width: 281
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_5
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1003
+        width: 344
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_6
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 1007
+        width: 366
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_7
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 1015
+        width: 324
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_8
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 1023
+        width: 300
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_9
+      rect:
+        serializedVersion: 2
+        x: 3049
+        y: 1030
+        width: 277
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_10
+      rect:
+        serializedVersion: 2
+        x: 3539
+        y: 1035
+        width: 279
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_11
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 549
+        width: 280
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_12
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 548
+        width: 276
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_13
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 548
+        width: 280
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_14
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 548
+        width: 280
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_15
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 548
+        width: 287
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_16
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 551
+        width: 310
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_17
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 558
+        width: 323
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_18
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 564
+        width: 330
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_19
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 78
+        width: 327
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_20
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 78
+        width: 324
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_21
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 78
+        width: 322
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_22
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 76
+        width: 319
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_23
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 76
+        width: 316
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoubleJump_24
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 76
+        width: 314
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

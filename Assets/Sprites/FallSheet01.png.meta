@@ -1,0 +1,314 @@
+fileFormatVersion: 2
+guid: ec0a93897d0af44d0b1bc8703d8d5be7
+timeCreated: 1496664856
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FallSheet01_0
+    21300002: FallSheet01_1
+    21300004: FallSheet01_2
+    21300006: FallSheet01_3
+    21300008: FallSheet01_4
+    21300010: FallSheet01_5
+    21300012: FallSheet01_6
+    21300014: FallSheet01_7
+    21300016: FallSheet01_8
+    21300018: FallSheet01_9
+    21300020: FallSheet01_10
+    21300022: FallSheet01_11
+    21300024: FallSheet01_12
+    21300026: FallSheet01_13
+    21300028: FallSheet01_14
+    21300030: FallSheet01_15
+    21300032: FallSheet01_16
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FallSheet01_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 572
+        width: 322
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_1
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 571
+        width: 320
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_2
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 571
+        width: 317
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_3
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 571
+        width: 314
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_4
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 571
+        width: 316
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_5
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 570
+        width: 319
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_6
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 564
+        width: 317
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_7
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 564
+        width: 320
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_8
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 72
+        width: 318
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_9
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 90
+        width: 317
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_10
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 80
+        width: 315
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_11
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 82
+        width: 315
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_12
+      rect:
+        serializedVersion: 2
+        x: 3133
+        y: 460
+        width: 29
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 87
+        width: 332
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 68
+        width: 320
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_15
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 74
+        width: 317
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FallSheet01_16
+      rect:
+        serializedVersion: 2
+        x: 3545
+        y: 80
+        width: 319
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

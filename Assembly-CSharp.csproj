@@ -47,9 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraCollisionScript.cs" />
+     <Compile Include="Assets\Scripts\CreditsScript.cs" />
      <Compile Include="Assets\Scripts\JackInTheBox.cs" />
      <Compile Include="Assets\Scripts\Pendulum.cs" />
      <Compile Include="Assets\Scripts\PickUp.cs" />
+     <Compile Include="Assets\Scripts\StartScreenScript.cs" />
      <Compile Include="Assets\Scripts\WayOut.cs" />
      <Compile Include="Assets\Scripts\maincharscript.cs" />
  <Reference Include="UnityEngine.UI">

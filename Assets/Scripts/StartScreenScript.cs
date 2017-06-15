@@ -13,9 +13,34 @@ public class StartScreenScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.anyKeyDown) { 
-			SceneManager.LoadScene("Level1");
-		}
+		/*if (Input.anyKeyDown) { 
+			SceneManager.LoadScene("Instructions");
+		}*/
 		
+	}
+
+	public void GoToPlayGame()
+	{
+		SceneManager.LoadScene("Level1");
+	}
+
+	public void GoToExitGame()
+	{
+		Application.Quit();
+	}
+
+	public void GoToInstructions()
+	{
+		SceneManager.LoadScene("Instructions");
+	}
+
+	public void GoToStory()
+	{
+		SceneManager.LoadScene("Story");
+	}
+
+	public void GoToCredits()
+	{
+		SceneManager.LoadScene("Credits");
 	}
 }

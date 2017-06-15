@@ -165,7 +165,7 @@ public class maincharscript : MonoBehaviour {
 				isJumping = true;
 				jumpStartTime = Time.time;
 				jumpsMade++;
-				//GetComponent<Rigidbody2D> ().velocity = new Vector2(GetComponent<Rigidbody2D> ().velocity.x,0);
+				GetComponent<Rigidbody2D> ().velocity = new Vector2(GetComponent<Rigidbody2D> ().velocity.x,0);
 				GetComponent<Rigidbody2D> ().AddForce (new Vector2(0,jumpForce*100));
 				print ("JUMP!");
 
@@ -330,6 +330,8 @@ public class maincharscript : MonoBehaviour {
 
 	void resetAll()
 	{
+		//Redundant method? 
+
 		//Resets all data to original state
 
 		//Reset falling and jumping flags

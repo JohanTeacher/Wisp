@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ec0a93897d0af44d0b1bc8703d8d5be7
-timeCreated: 1496664856
+timeCreated: 1496926794
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -237,19 +237,6 @@ TextureImporter:
         y: 82
         width: 315
         height: 379
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: FallSheet01_12
-      rect:
-        serializedVersion: 2
-        x: 3133
-        y: 460
-        width: 29
-        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

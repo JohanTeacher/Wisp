@@ -1,0 +1,748 @@
+fileFormatVersion: 2
+guid: 2173e7eb07e354361be1e6cac2c05433
+timeCreated: 1496924980
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MainChar_IdleFINAL01-4K_3_0
+    21300002: MainChar_IdleFINAL01-4K_3_1
+    21300004: MainChar_IdleFINAL01-4K_3_2
+    21300006: MainChar_IdleFINAL01-4K_3_3
+    21300008: MainChar_IdleFINAL01-4K_3_4
+    21300010: MainChar_IdleFINAL01-4K_3_5
+    21300012: MainChar_IdleFINAL01-4K_3_6
+    21300014: MainChar_IdleFINAL01-4K_3_7
+    21300016: MainChar_IdleFINAL01-4K_3_8
+    21300018: MainChar_IdleFINAL01-4K_3_9
+    21300020: MainChar_IdleFINAL01-4K_3_10
+    21300022: MainChar_IdleFINAL01-4K_3_11
+    21300024: MainChar_IdleFINAL01-4K_3_12
+    21300026: MainChar_IdleFINAL01-4K_3_13
+    21300028: MainChar_IdleFINAL01-4K_3_14
+    21300030: MainChar_IdleFINAL01-4K_3_15
+    21300032: MainChar_IdleFINAL01-4K_3_16
+    21300034: MainChar_IdleFINAL01-4K_3_17
+    21300036: MainChar_IdleFINAL01-4K_3_18
+    21300038: MainChar_IdleFINAL01-4K_3_19
+    21300040: MainChar_IdleFINAL01-4K_3_20
+    21300042: MainChar_IdleFINAL01-4K_3_21
+    21300044: MainChar_IdleFINAL01-4K_3_22
+    21300046: MainChar_IdleFINAL01-4K_3_23
+    21300048: MainChar_IdleFINAL01-4K_3_24
+    21300050: MainChar_IdleFINAL01-4K_3_25
+    21300052: MainChar_IdleFINAL01-4K_3_26
+    21300054: MainChar_IdleFINAL01-4K_3_27
+    21300056: MainChar_IdleFINAL01-4K_3_28
+    21300058: MainChar_IdleFINAL01-4K_3_29
+    21300060: MainChar_IdleFINAL01-4K_3_30
+    21300062: MainChar_IdleFINAL01-4K_3_31
+    21300064: MainChar_IdleFINAL01-4K_3_32
+    21300066: MainChar_IdleFINAL01-4K_3_33
+    21300068: MainChar_IdleFINAL01-4K_3_34
+    21300070: MainChar_IdleFINAL01-4K_3_35
+    21300072: MainChar_IdleFINAL01-4K_3_36
+    21300074: MainChar_IdleFINAL01-4K_3_37
+    21300076: MainChar_IdleFINAL01-4K_3_38
+    21300078: MainChar_IdleFINAL01-4K_3_39
+    21300080: MainChar_IdleFINAL01-4K_3_40
+    21300082: MainChar_IdleFINAL01-4K_3_41
+    21300084: MainChar_IdleFINAL01-4K_3_42
+    21300086: MainChar_IdleFINAL01-4K_3_43
+    21300088: MainChar_IdleFINAL01-4K_3_44
+    21300090: MainChar_IdleFINAL01-4K_3_45
+    21300092: MainChar_IdleFINAL01-4K_3_46
+    21300094: MainChar_IdleFINAL01-4K_3_47
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 2128
+        width: 329
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_1
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 2128
+        width: 331
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_2
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 2130
+        width: 331
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_3
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 2130
+        width: 333
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_4
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 2130
+        width: 336
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_5
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 2131
+        width: 337
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_6
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 2132
+        width: 336
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_7
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 2133
+        width: 338
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1731
+        width: 336
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_9
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1731
+        width: 337
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_10
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1733
+        width: 334
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_11
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1735
+        width: 333
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_12
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1736
+        width: 331
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_13
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 1738
+        width: 332
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_14
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 1740
+        width: 330
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_15
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 1743
+        width: 326
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1344
+        width: 326
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_17
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1346
+        width: 325
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_18
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1348
+        width: 325
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_19
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1349
+        width: 325
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_20
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1351
+        width: 327
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_21
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 1351
+        width: 328
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_22
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 1352
+        width: 329
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_23
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 1352
+        width: 331
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_24
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 951
+        width: 333
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_25
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 951
+        width: 337
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_26
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 951
+        width: 339
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_27
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 949
+        width: 341
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_28
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 949
+        width: 344
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_29
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 947
+        width: 347
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_30
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 946
+        width: 348
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_31
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 944
+        width: 350
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_32
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 541
+        width: 353
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_33
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 539
+        width: 352
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_34
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 538
+        width: 353
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_35
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 536
+        width: 351
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_36
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 534
+        width: 351
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_37
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 532
+        width: 347
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_38
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 531
+        width: 348
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_39
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 529
+        width: 342
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_40
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 125
+        width: 341
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_41
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 124
+        width: 336
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_42
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 122
+        width: 333
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_43
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 121
+        width: 329
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_44
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 121
+        width: 328
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_45
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 119
+        width: 328
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_46
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 119
+        width: 328
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MainChar_IdleFINAL01-4K_3_47
+      rect:
+        serializedVersion: 2
+        x: 2902
+        y: 119
+        width: 330
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

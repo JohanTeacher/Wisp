@@ -36,7 +36,7 @@ public class maincharscript : MonoBehaviour {
     private GameObject glowy; //The object that holds the glow effect sprite
 
 
-
+    //Constructor
 	maincharscript()
 	{
 		runSpeed = 0.0f;
@@ -133,10 +133,10 @@ public class maincharscript : MonoBehaviour {
 				if(petalsCollected >= isCloseToWayOut.GetComponent<WayOut>().HP)
 				{
 					print ("YOU HAVE THE POWA!! THE WAY OPENS!");
-					isCloseToWayOut.GetComponent<WayOut> ().isOpen = true;
+                    isCloseToWayOut.GetComponent<WayOut>().OpenUp();
 
                     //Try to walk through the WayOut
-                    TryToWalkThroughWayOut(isCloseToWayOut);
+                    //TryToWalkThroughWayOut(isCloseToWayOut);
 				}
 			}
 		}
@@ -165,7 +165,7 @@ public class maincharscript : MonoBehaviour {
 				isJumping = true;
 				jumpStartTime = Time.time;
 				jumpsMade++;
-				GetComponent<Rigidbody2D> ().velocity = new Vector2(GetComponent<Rigidbody2D> ().velocity.x,0);
+				if (onUnstableSurface) GetComponent<Rigidbody2D> ().velocity = new Vector2(GetComponent<Rigidbody2D> ().velocity.x,0);
 				GetComponent<Rigidbody2D> ().AddForce (new Vector2(0,jumpForce*100));
 				print ("JUMP!");
 
@@ -262,6 +262,7 @@ public class maincharscript : MonoBehaviour {
 		if (GetComponent<Rigidbody2D> ().velocity.y == 0 || onUnstableSurface) {
 			isFalling = false;
 			jumpsMade = 0;
+           
 		} else {
 			isFalling = true;
 		}
@@ -519,6 +520,7 @@ public class maincharscript : MonoBehaviour {
 
 			print ("Picking up " + coll.gameObject.name);
 		}
+        
 			
 
 	}

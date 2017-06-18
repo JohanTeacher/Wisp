@@ -24,4 +24,18 @@ public class WayOut : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void OpenUp()
+    {
+        //opens upp the way out
+        isOpen = true;
+
+        //disable collider
+        //transform.GetChild(0).GetComponent<Collider2D>().enabled = false;
+
+        //start animation
+        transform.GetChild(0).GetComponent<Animator>().SetTrigger("Open");
+    }
+
+
 }

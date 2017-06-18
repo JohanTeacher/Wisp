@@ -16,6 +16,13 @@ public class maincharscript : MonoBehaviour {
 
 	public Canvas UICanvas; //Reference to the UI
 
+    public AudioClip jumpSound;
+    public AudioClip doubleJumpSound;
+    public AudioClip climbSound;
+    public AudioClip grabPendulumSound;
+    public AudioClip magicSuccessSound;
+    public AudioClip magicFailedSound;
+
 
 	//Private variables
 	private int jumpsMade;	//Itereator. How many jumps ha pre
@@ -135,9 +142,17 @@ public class maincharscript : MonoBehaviour {
 					print ("YOU HAVE THE POWA!! THE WAY OPENS!");
                     isCloseToWayOut.GetComponent<WayOut>().OpenUp();
 
-                    //Try to walk through the WayOut
-                    //TryToWalkThroughWayOut(isCloseToWayOut);
+                    //play sound
+                    GetComponent<AudioSource>().PlayOneShot(magicSuccessSound);
 				}
+                else
+                {
+                    //Not enough power
+                    print("Sorry! Not enough power.");
+
+                    //play sound
+                    GetComponent<AudioSource>().PlayOneShot(magicFailedSound);
+                }
 			}
 		}
 
@@ -158,20 +173,30 @@ public class maincharscript : MonoBehaviour {
 			}
 
 
-			//Are we firmly on ground?
-			if (jumpsMade < multiJumpNumber) {
+            //Are we firmly on ground?
+            if (jumpsMade < multiJumpNumber)
+            {
 
-				//Start jump sequence
-				isJumping = true;
-				jumpStartTime = Time.time;
-				jumpsMade++;
-				if (onUnstableSurface) GetComponent<Rigidbody2D> ().velocity = new Vector2(GetComponent<Rigidbody2D> ().velocity.x,0);
-				GetComponent<Rigidbody2D> ().AddForce (new Vector2(0,jumpForce*100));
-				print ("JUMP!");
+                //Play sound
+                if (isJumping || isFalling){
+                    GetComponent<AudioSource>().PlayOneShot(doubleJumpSound);
+                } else {
+                    GetComponent<AudioSource>().PlayOneShot(jumpSound);
+                }
 
-				//Change animation
-				GetComponent<Animator>().SetTrigger("Jump");
-			}
+                //Start jump sequence
+                isJumping = true;
+                jumpStartTime = Time.time;
+                jumpsMade++;
+                if (onUnstableSurface) GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, 0);
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce * 100));
+                print("JUMP! ");
+
+                //Change animation
+                GetComponent<Animator>().SetTrigger("Jump");
+
+               
+            }
 		}
 
 
@@ -188,6 +213,15 @@ public class maincharscript : MonoBehaviour {
             //Change to running animation
             GetComponent<Animator>().SetBool("Walking", true);
 
+            if (isClimbing)
+            { 
+                //play sound
+                if (!GetComponent<AudioSource>().isPlaying)
+                {
+                    GetComponent<AudioSource>().PlayOneShot(climbSound);
+                }
+            }
+
         }
 		else if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) 
 		{
@@ -199,6 +233,15 @@ public class maincharscript : MonoBehaviour {
 
             //Change to running animation
             GetComponent<Animator>().SetBool("Walking", true);
+
+            if (isClimbing)
+            {
+                //play sound
+                if (!GetComponent<AudioSource>().isPlaying)
+                {
+                    GetComponent<AudioSource>().PlayOneShot(climbSound);
+                }
+            }
         }
         else
         {
@@ -217,12 +260,22 @@ public class maincharscript : MonoBehaviour {
 				//Player wants to move UP
 				this.transform.Translate (new Vector2 (0, runSpeed * Time.deltaTime));
 
-			}
+                //play sound
+                if (!GetComponent<AudioSource>().isPlaying){
+                    GetComponent<AudioSource>().PlayOneShot(climbSound);
+                }
+
+            }
 			if (Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.DownArrow)) {
 				//Player wants to move Down
 				this.transform.Translate (new Vector2 (0,-runSpeed * Time.deltaTime));
-
-			}
+                
+                //play sound
+                if (!GetComponent<AudioSource>().isPlaying)
+                {
+                    GetComponent<AudioSource>().PlayOneShot(climbSound);
+                }
+            }
 		}
 
 	}
@@ -413,12 +466,20 @@ public class maincharscript : MonoBehaviour {
 			GetComponent<Rigidbody2D> ().gravityScale = 0.0f;
 
 			print ("Hanging");
-		} else if (other.gameObject.tag == "UpwardsInforcer") {
+
+            //play sound
+            GetComponent<AudioSource>().PlayOneShot(grabPendulumSound);
+
+        } else if (other.gameObject.tag == "UpwardsInforcer") {
 			//On a bouncer (like a trampoline) or a wind draft that will cast mainchar upwards
 
 			GetComponent<Rigidbody2D> ().velocity = new Vector2 (0.0f, 0.0f);
 			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 4500));
-			print ("UP UP UP!!");
+
+            //playsound
+            other.GetComponent<AudioSource>().Play();
+
+            print ("UP UP UP!!");
 		} else if (other.gameObject.tag == "WayOut") {
 			//Enetering the way out to finish the level
 
@@ -447,6 +508,9 @@ public class maincharscript : MonoBehaviour {
 
 					//Set the timer
 					other.GetComponent<JackInTheBox> ().Unlock();
+
+                    //playsound
+                    other.GetComponent<AudioSource>().PlayOneShot(other.GetComponent<JackInTheBox>().windUpSound);
 
 				}
 			}

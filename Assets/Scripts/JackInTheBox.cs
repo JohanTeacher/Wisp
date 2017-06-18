@@ -11,6 +11,10 @@ public class JackInTheBox : MonoBehaviour {
 	public float catapultPower; //How much power to add when shooting up objects
 	public bool locked; //timer will only tick if the box is unlocked
 
+    public AudioClip openSound;
+    public AudioClip closeSound;
+    public AudioClip windUpSound;
+
 	//Overlaping objects ti boost
 	ContactFilter2D filter;
 	Collider2D[] overlapingColliders = new Collider2D[3];
@@ -29,8 +33,8 @@ public class JackInTheBox : MonoBehaviour {
 		if (!locked)
 			countDownClock += Time.deltaTime;
 
-		//Check time
-		if (countDownClock >= timeToOpening) {
+        //Check time
+        if (countDownClock >= timeToOpening) {
 			// It's time to open up the lid and shot up any objects ontop of it
 
 			//Find items that recides ontop of the box
@@ -46,8 +50,13 @@ public class JackInTheBox : MonoBehaviour {
 
 			//Resetclock
 			countDownClock = 0;
+
+            //playSound
+            GetComponent<AudioSource>().PlayOneShot(openSound);
 		}
-	}
+        
+
+    }
 
 	public void Lock()
 	{

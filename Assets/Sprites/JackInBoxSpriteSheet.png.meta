@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: 31b76ccee6f48ca47807d7df3515ad04
+timeCreated: 1497907389
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JackInBoxSpriteSheet_0
+    21300002: JackInBoxSpriteSheet_1
+    21300004: JackInBoxSpriteSheet_2
+    21300006: JackInBoxSpriteSheet_3
+    21300008: JackInBoxSpriteSheet_4
+    21300010: JackInBoxSpriteSheet_5
+    21300012: JackInBoxSpriteSheet_6
+    21300014: JackInBoxSpriteSheet_7
+    21300016: JackInBoxSpriteSheet_8
+    21300018: JackInBoxSpriteSheet_9
+    21300020: JackInBoxSpriteSheet_10
+    21300022: JackInBoxSpriteSheet_11
+    21300024: JackInBoxSpriteSheet_12
+    21300026: JackInBoxSpriteSheet_13
+    21300028: JackInBoxSpriteSheet_14
+    21300030: JackInBoxSpriteSheet_15
+    21300032: JackInBoxSpriteSheet_16
+    21300034: JackInBoxSpriteSheet_17
+    21300036: JackInBoxSpriteSheet_18
+    21300038: JackInBoxSpriteSheet_19
+    21300040: JackInBoxSpriteSheet_20
+    21300042: JackInBoxSpriteSheet_21
+    21300044: JackInBoxSpriteSheet_22
+    21300046: JackInBoxSpriteSheet_23
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2110
+        width: 862
+        height: 998
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 2110
+        width: 862
+        height: 998
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 2110
+        width: 862
+        height: 998
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 2110
+        width: 862
+        height: 998
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 2110
+        width: 862
+        height: 998
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 5128
+        y: 2110
+        width: 862
+        height: 998
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 6128
+        y: 2110
+        width: 862
+        height: 998
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 7128
+        y: 2110
+        width: 862
+        height: 998
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1110
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1110
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 1110
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 1110
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 1110
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 5128
+        y: 1110
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 6128
+        y: 1110
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 7128
+        y: 1110
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 109
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 109
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 109
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 109
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 4128
+        y: 109
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 5128
+        y: 109
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 6128
+        y: 109
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JackInBoxSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 7128
+        y: 109
+        width: 862
+        height: 1000
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

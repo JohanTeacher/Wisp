@@ -53,7 +53,10 @@ public class JackInTheBox : MonoBehaviour {
 
             //playSound
             GetComponent<AudioSource>().PlayOneShot(openSound);
-		}
+
+            //Trigger animation
+            GetComponent<Animator>().SetTrigger("PopUp");
+        }
         
 
     }
